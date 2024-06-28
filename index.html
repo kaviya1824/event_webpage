@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Planning</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Event Planning</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="intro">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvfE0nUL8J_KeuHtRaDCQpF0CkKrLja3JO1qOHh2JbIdVbMWDm9oJf_isw6DQ9e3q2jTo&usqp=CAU"
+          alt="Event Image"
+        />
+        <div class="intro-text">
+          <h2>Plan Your Perfect Event</h2>
+          <p>
+            Choose from a variety of events in your area and create an
+            unforgettable experience.
+          </p>
+        </div>
+      </section>
+
+      <section id="event-form">
+        <h2>Plan an Event</h2>
+        <form id="planEventForm">
+          <label for="eventName">Event Name:</label>
+          <input type="text" id="eventName" name="eventName" required />
+
+          <label for="eventDate">Event Date:</label>
+          <input type="date" id="eventDate" name="eventDate" required />
+
+          <label for="eventType">Event Type:</label>
+          <select id="eventType" name="eventType" required>
+            <option value="conference">Conference</option>
+            <option value="wedding">Wedding</option>
+            <option value="party">Party</option>
+            <option value="concert">Concert</option>
+          </select>
+
+          <label for="eventLocation">Event Location:</label>
+          <input type="text" id="eventLocation" name="eventLocation" required />
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Event Planning</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
